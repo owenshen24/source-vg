@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>source_vg</title>
+  
+  <link rel="stylesheet" href="styles/codemirror.css">
+  <link rel="stylesheet" href="styles/monokai.css">
+  <link rel="stylesheet" type="text/css" href="styles/layout.css">
+
+  <script defer src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  <script defer src="scripts/codemirror.min.js"></script>
+  <script defer src="scripts/xml.js"></script>
+  <script defer src="scripts/ui.js"></script>
+  <script defer src="scripts/svg-pan-zoom.min.js"></script>
+</head>
+
+<body>
+  <div class="grid">
+    
+    <div>
+      <div class="box">
+        <textarea id="textarea"></textarea>
+      </div>
+    </div>
+
+    <div>
+      <div class="box">
+        <div class="svg-holder"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="button-container">
+    <input type="file" name="file" id="file" class="inputfile" accept=".svg,.xml"/>
+    <label for="file" class="upload option-button">📄 Upload</label>
+    <button class="render option-button">🖌️ Render</button>
+    <button class="download option-button">💾 Download</button>
+    <input type="checkbox" class="resize" checked> Auto-resize
+  </div>
+</body>
+
+</html>

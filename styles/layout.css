@@ -1,0 +1,67 @@
+:root {
+  --box-height: 90vh;
+}
+
+html {
+  font-family: 'Roboto', 'Open Sans', 'Arial', 'sans-serif';
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.box {
+  border: 0.25rem black solid;
+  height: var(--box-height);
+}
+
+#textarea {
+  resize: none;
+  word-wrap:break-word;
+}
+
+.CodeMirror, .svg-holder{
+  height: var(--box-height);
+}
+
+button {
+  all: unset;
+}
+
+.option-button {
+  border: 0.1rem black solid;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+  margin-left: 0.5rem;
+}
+
+.option-button:hover {
+  background-color: rgb(36, 36, 36);
+  color: white;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.resize {
+  margin-left: 0.5rem;
+}
+
+svg {
+  cursor: grab;
+  height: var(--box-height);
+}
+
+img {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
